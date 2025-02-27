@@ -1,11 +1,3 @@
-# zenburn-palette
-
-The [base16-zenburn](https://github.com/nawetimebomb/base16-zenburn-scheme) 
-palette in various formats
-
-## colours
-
-```
 #383838 Dark grey
 #404040 Dark grey
 #606060 Charcoal grey
@@ -38,5 +30,3 @@ palette in various formats
 #7CB8BB Greyblue
 #DC8CC3 Orchid
 #000000 Black
-```
-
