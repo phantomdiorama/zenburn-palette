@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>zenburn.html</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+div#colors div{float: left; width: 64px; height: 64px; margin: 2px; text-align: center; font-size: 12px; font-family: Arial, Helvetica, sans-serif}
+div#colors div span{font-weight: bold; cursor: pointer}
+div#colors div span:hover{text-decoration: underline}
+html{}
+input{margin-left: 1em;}
+</style></head>
+<body>
+<div id="colors">
+<div style="background-color:rgb(56, 56, 56); color:rgb(255, 255, 255)">Dark grey:<br/><span>#383838</span></div><div style="background-color:rgb(64, 64, 64); color:rgb(255, 255, 255)">Dark grey:<br/><span>#404040</span></div><div style="background-color:rgb(96, 96, 96); color:rgb(255, 255, 255)">Charcoal grey:<br/><span>#606060</span></div><div style="background-color:rgb(111, 111, 111); color:rgb(255, 255, 255)">Medium grey:<br/><span>#6F6F6F</span></div><div style="background-color:rgb(128, 128, 128); color:rgb(0, 0, 0)">Medium grey:<br/><span>#808080</span></div><div style="background-color:rgb(220, 220, 204); color:rgb(0, 0, 0)">Light grey:<br/><span>#DCDCCC</span></div><div style="background-color:rgb(192, 192, 192); color:rgb(0, 0, 0)">Silver:<br/><span>#C0C0C0</span></div><div style="background-color:rgb(255, 255, 255); color:rgb(0, 0, 0)">White:<br/><span>#FFFFFF</span></div><div style="background-color:rgb(220, 163, 163); color:rgb(0, 0, 0)">Pale rose:<br/><span>#DCA3A3</span></div><div style="background-color:rgb(223, 175, 143); color:rgb(0, 0, 0)">Pale brown:<br/><span>#DFAF8F</span></div><div style="background-color:rgb(224, 207, 159); color:rgb(0, 0, 0)">Beige:<br/><span>#E0CF9F</span></div><div style="background-color:rgb(95, 127, 95); color:rgb(0, 0, 0)">Slate green:<br/><span>#5F7F5F</span></div><div style="background-color:rgb(147, 224, 227); color:rgb(0, 0, 0)">Light cyan:<br/><span>#93E0E3</span></div><div style="background-color:rgb(124, 184, 187); color:rgb(0, 0, 0)">Greyblue:<br/><span>#7CB8BB</span></div><div style="background-color:rgb(220, 140, 195); color:rgb(0, 0, 0)">Orchid:<br/><span>#DC8CC3</span></div><div style="background-color:rgb(0, 0, 0); color:rgb(255, 255, 255)">Black:<br/><span>#000000</span></div></div>
+<script>
+function selectText(element){ if (document.selection){ var range = document.body.createTextRange(); range.moveToElementText(element); range.select(); }else if (window.getSelection){ var range = document.createRange(); range.selectNode(element); window.getSelection().addRange(range); } }
+document.getElementById('colors').addEventListener('click', function(event){ if (event.target.tagName.toLowerCase() == 'span'){ event.preventDefault(); selectText(event.target); document.execCommand('copy'); }});
+</script></body></html>
